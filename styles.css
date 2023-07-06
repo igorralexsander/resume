@@ -1,0 +1,295 @@
+@page {
+    size: auto;
+    margin: 0mm;
+}
+
+@media print {
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 2px;
+}
+
+.perfil {
+    background-color: #2196F3;
+    width: 260px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-height: 100%;
+    height: 1000px;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.perfil-wrapper {
+    padding: 10px;
+}
+
+.foto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-wrapper {
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-perfil {
+    width: 195px;
+    height: 195px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.nome {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cargo {
+    font-size: .9em;
+    text-align: center;
+}
+
+.divider {
+    background-color: white;
+    height: 1px;
+    border: 0px;
+}
+
+.social-item {
+    color: white;
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.social-item i {
+    font-size: 1.7em;
+    color: rgba(255, 255, 255, .7);
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.social-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.peril-text-wrapper {
+    margin-top: 10px;
+}
+
+.perfil-header {
+    background-color: rgba(255, 255, 255, .7);
+    color: #2196F3;
+    padding: 4px;
+    margin: 20px 0px 5px 0px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.perfil-text {
+    text-align: justify;
+}
+
+.header {
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px 10px 4px 10px;
+    font-size: .9em;
+}
+
+.formacao {
+    margin: 5px 10px;
+    position: relative;
+    height: 75px;
+}
+
+.description {
+    position: absolute;
+    top: 40px;
+}
+
+.formacao-item {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.carreira {
+    margin: 5px 10px 10px 5px;
+    position: relative;
+}
+
+.carreira-item {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.descricao-carreira {
+    text-align: justify;
+    font-size: .79em;
+}
+
+.normal-text {
+    font-size: .75em;
+}
+
+.left-timeline-1 {
+    position: absolute;
+    left: 18px;
+    top: 50px;
+    bottom: -10px;
+    width: 4px;
+    background-color: #2196F3;
+}
+
+.icon-carreira {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #2196F3;
+    left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, .7);
+    border-radius: 50%;
+    font-size: .6em;
+}
+
+.icon-carreira-fim {
+    font-size: .6em;
+    bottom: 0px;
+}
+
+
+
+.ini {
+    left: 30px;
+}
+
+.fim {
+    right: 30px;
+}
+
+.line {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 50%;
+    height: 2px;
+    background-color: #2196F3;
+}
+
+.tecnologias-utilizadas span {
+    background-color: #2196F3;
+    color: rgba(255, 255, 255, .8);
+    padding: 2px 4px;
+    font-size: .7em;
+    border-radius: 4px;
+    margin: 2px 0px;
+    display: inline-block;
+}
+
+.resumo {
+    margin: 20px 10px 10px 10px;
+    position: relative;
+
+}
+
+.versao{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: rgba(255, 255, 255, .8);
+    font-size: .8em;
+}
+
+.carreira-header{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px){
+
+    
+    .perfil{
+        width: 100%;
+        height: auto;
+        position: initial;
+        min-height: 500px;
+    }
+
+   
+
+    .content{
+        position: initial;
+        margin-bottom: 150px;
+    }
+
+   .social-item{
+       justify-content: center;
+       position: relative;
+       height: 30px;
+   }
+
+   .social-item:not(.double-icon) > i{
+       position: absolute;
+       left: 10px;
+       top: 0px;
+   }
+
+   .double-icon{
+       position: absolute;
+       left: 10px;
+       top: 0px;
+   }
+
+   .formacao {
+        margin: 5px 10px;
+        position: relative;
+        height: 95px;
+    }
+    
+}
